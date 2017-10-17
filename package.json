@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/ryanlabouve/git-told#readme",
   "dependencies": {
-    "gaze": "^1.1.2"
+    "gaze": "^1.1.2",
+    "yargs": "^9.0.1"
   },
   "bin": "./bin/git-told.js"
 }

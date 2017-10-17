@@ -23,7 +23,10 @@ let init = (params = {}) => {
       readFile(head, (data) => {
         let content = branchNameFromHEAD(data);
         let operation = 'branch';
-        say({content, operation});
+
+        let sayParams = Object.assign({}, params, { content, operation });
+
+        say(sayParams);
       });
     });
   });
