@@ -1,0 +1,25 @@
+{
+  "name": "git-told",
+  "version": "1.0.0",
+  "description": "Git voice navigation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanlabouve/git-told.git"
+  },
+  "keywords": [
+    "git",
+    "told",
+    "voice",
+    "novel"
+  ],
+  "author": "@ryanlabouve",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanlabouve/git-told/issues"
+  },
+  "homepage": "https://github.com/ryanlabouve/git-told#readme"
+}
