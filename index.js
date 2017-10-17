@@ -1,9 +1,14 @@
 'use strict'
-const fs = require('fs');
+const gaze = require('gaze');
 const path = require('path');
 const { log } = console;
 
 let head = path.join(__dirname, '.git', 'HEAD');
 
-fs.watch(head, () => log('Git happened!'));
+gaze(head, function(err, watcher) {
+  this.on('changed', function(filepath) {
+    console.log(filepath + ' was changed');
+  });
+});
+
 log(`Starting to watch ${head} for changes`);
