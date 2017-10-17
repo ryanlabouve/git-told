@@ -3,6 +3,7 @@ const fs = require('fs');
 const gaze = require('gaze');
 const path = require('path');
 const { log } = console;
+const say = require('./lib/say.js');
 
 let head = path.join(__dirname, '.git', 'HEAD');
 
@@ -18,8 +19,8 @@ let branchNameFromHEAD = (ref) => ref.split('/').slice(-1)[0];
 gaze(head, function(err, watcher) {
   this.on('changed', function(filepath) {
     readFile(head, (data) => {
-      let sayContent = branchNameFromHEAD(data);
-      console.log(sayContent);
+      let content = branchNameFromHEAD(data);
+      say({content});
     });
   });
 });
