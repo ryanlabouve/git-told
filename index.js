@@ -20,7 +20,8 @@ gaze(head, function(err, watcher) {
   this.on('changed', function(filepath) {
     readFile(head, (data) => {
       let content = branchNameFromHEAD(data);
-      say({content});
+      let operation = 'branch';
+      say({content, operation});
     });
   });
 });
