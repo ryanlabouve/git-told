@@ -24,7 +24,7 @@
   "homepage": "https://github.com/ryanlabouve/git-told#readme",
   "dependencies": {
     "gaze": "^1.1.2",
-    "yargs": "^9.0.1"
+    "yargs": "^17.7.1"
   },
   "bin": "./bin/git-told.js"
 }
